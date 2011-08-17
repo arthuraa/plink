@@ -1,0 +1,6 @@
+*.opx/
+*.opx.broken/
+*.exe
+*.log
+_build
+_tracks
