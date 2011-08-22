@@ -1,0 +1,4 @@
+# Build
+
+    opa plink.opack -o plink.exe
+
