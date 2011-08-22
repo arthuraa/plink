@@ -2,9 +2,9 @@ package plink.models.query;
 
 import plink.models.link;
 
-type Query.query = {term: string; links: list(Link.link)};
+type Query.t = {term: string; links: list(Link.t)};
 
-db /queries : stringmap(Query.query)
+db /queries : stringmap(Query.t)
 
 Query = {{
   path(id) =
