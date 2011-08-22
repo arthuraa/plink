@@ -4,3 +4,4 @@ src/link.opa
 src/query.opa
 src/query_controller.opa
 src/user.opa
+src/client.opa

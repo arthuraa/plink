@@ -1,6 +1,9 @@
 package plink.controllers.main
 
 import plink.models.user
+import plink.models.client
+
+import stdlib.components.login
 
 MainController = {{
 
@@ -30,6 +33,10 @@ MainController = {{
     then Dom.transform([#content +<- <>Signed up successfully!</>])
     else Dom.transform([#content +<- <>Sign up failed!</>])
 
-  signin() = void
+  render_signin() =
+    CLogin.html(Client.credentials)
+
+  signin() =
+    Dom.transform([#content <- render_signin()])
 
 }}
